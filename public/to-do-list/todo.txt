@@ -1,0 +1,19 @@
+{
+"username": "flix",
+"title": "testing",
+"lists": [
+"buy milk",
+"get eggs",
+"pick up bread"
+]
+}
+
+{
+"title_id": 2
+}
+
+{
+"title_id": 3'
+"list_id": 1,
+"status": true
+}

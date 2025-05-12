@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management</title>
+    <script src="js/array.js"></script>
+    <script src="js/object.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        let employees = [
+            {
+                "emp_id": "123",
+                "name": "Golib",
+                "position": "ceo"
+            },
+            {
+                "emp_id": "456",
+                "name": "Galvan",
+                "position": "supervisor"
+            }
+        ];
+    </script>
+</head>
+<body>
+    <div class="left-section">
+        <h2>EMPLOYEE LIST</h2>
+        <button type="button" onclick="showEmployees()">Show Employees</button>
+        <table id="employee">
+        </table>
+    </div>
+
+    <div class="right-section">
+        <h2>Add Employee</h2>
+        <label for="emp_id">Employee ID:</label>
+        <input type="text" id="emp_id" required><br><br>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br><br>
+
+        <label for="position">Position:</label>
+        <input type="text" id="position" required><br><br>
+
+        <button type="button" onclick="add()">Add</button>
+    </div>
+</body>
+</html>
