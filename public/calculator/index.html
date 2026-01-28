@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="./js/numbers.js"></script>
+    <script src="./js/operations.js"></script>
+    <style>
+        body {
+            font-family: monospace;
+            text-align: center;
+            margin: 20px;
+            background-color: #e3f2fd;
+            color: #333333;
+        }
+    
+        .calculator {
+            display: inline-grid;
+            grid-template-columns: repeat(4, 60px);
+            grid-gap: 10px;
+            justify-content: center;
+            padding: 15px;
+            border-radius: 15px;
+            background-color: #ffffff;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+    
+        input[type="text"] {
+            grid-column: span 4;
+            height: 40px;
+            font-size: 18px;
+            text-align: right;
+            padding: 5px;
+            border: 2px solid #b0bec5;
+            border-radius: 8px;
+            background-color: #f5f5f5;
+            color: #333333;
+        }
+    
+        .inputs-container {
+            margin-bottom: 20px;
+        }
+    
+        .inputs-container input {
+            width: 100px;
+            height: 30px;
+            font-size: 16px;
+            margin: 5px;
+            text-align: center;
+            border-radius: 8px;
+            border: 2px solid #b0bec5;
+            background-color: #ffffff;
+            color: #333333;
+        }
+    
+        button {
+            height: 60px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 10px;
+            border: 2px solid #b0bec5;
+            background-color: #f5f5f5;
+            color: #333333;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+    
+        button:hover {
+            background-color: #e0e0e0;
+            transform: scale(1.05);
+        }
+    
+        button.operator {
+            background-color: #ff9800;
+            color: #ffffff;
+            font-weight: bold;
+        }
+    
+        button.operator:hover {
+            background-color: #e68900;
+        }
+    
+        button.equals {
+            background-color: #4caf50;
+            color: #ffffff;
+            font-weight: bold;
+        }
+    
+        button.equals:hover {
+            background-color: #45a247;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculator</h1>
+
+    <div class="inputs-container">
+        <input type="text" id="display1" value="0" readonly>
+        <input type="text" id="display2" hidden placeholder="Input 2">
+        <input type="text" id="operator" placeholder="Operator">
+    </div>
+
+    <div class="calculator">
+        <button onclick="seven()">7</button>
+        <button onclick="eight()">8</button>
+        <button onclick="nine()">9</button>
+        <button onclick="sum()">+</button>
+
+        <button onclick="four()">4</button>
+        <button onclick="five()">5</button>
+        <button onclick="six()">6</button>
+        <button onclick="sub()">-</button>
+
+        <button onclick="one()">1</button>
+        <button onclick="two()">2</button>
+        <button onclick="three()">3</button>
+        <button onclick="mul()">*</button>
+
+        <button onclick="zero()">0</button>
+        <button onclick="dot()">.</button>
+        <button onclick="equal()">=</button>
+        <button onclick="div()">÷</button>
+    </div>
+</body>
+</html>
