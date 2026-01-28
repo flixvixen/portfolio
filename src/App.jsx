@@ -51,9 +51,6 @@ const Portfolio = () => {
             { img: "/Screenshot 2026-01-28 153800.png", name: "AI Fundamentals with IBM SkillsBuild" },
             { img: "/cert.datascience.jpg", name: "Data Science Certificate" },
             { img: "/Screenshot 2026-01-28 153722.png", name: "Apply AI: Analyze Customer Reviews" },
-            { img: "/cert.modernai.jpg", name: "Modern AI Certification" },
-            { img: "/cert.modernai.jpg", name: "JavaScript Certificate" },
-            { img: "/cert.datascience.jpg", name: "Data Science Certificate" },
           ].map((cert, idx) => (
             <div key={idx} className="text-center">
               <img
